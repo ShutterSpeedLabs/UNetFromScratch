@@ -24,3 +24,5 @@ class CarvanaDataset(Dataset):
             augmentations = self.transform(image=image, mask=mask)
             image = augmentations["image"]
             mask = augmentations["mask"]
+            
+        return image, mask
