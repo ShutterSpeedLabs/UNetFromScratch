@@ -34,12 +34,12 @@ This project implements a U-Net architecture for image segmentation using PyTorc
    VAL_IMG_DIR = "path/to/val/images"
    VAL_MASK_DIR = "path/to/val/masks"
 
-##Usage
+## Usage
 To train the model:
 python train.py
 
 The script will automatically save checkpoints, evaluate accuracy, and save prediction images during training.
-##Model Architecture
+## Model Architecture
 The U-Net architecture is implemented in model.py. It consists of:
 
 Encoder (downsampling path)
@@ -47,7 +47,7 @@ Bottleneck
 Decoder (upsampling path)
 Skip connections
 
-##Data Augmentation
+## Data Augmentation
 The project uses the albumentations library for data augmentation. The augmentations include:
 
 Resizing
@@ -55,20 +55,25 @@ Rotation
 Horizontal and vertical flips
 Normalization
 
-##Evaluation
+## Evaluation
 The model's performance is evaluated using:
 
 Pixel-wise accuracy
 Dice score
 
-##Customization
+## Customization
 You can modify the hyperparameters in train.py to experiment with different settings:
 LEARNING_RATE = 1e-4
 BATCH_SIZE = 16
 NUM_EPOCHS = 3
 IMAGE_HEIGHT = 160
 IMAGE_WIDTH = 240
-
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+## License
+MIT
+## Acknowledgements
+This project is based on the U-Net architecture and is designed for the Carvana Image Masking Challenge.
 
 
 
